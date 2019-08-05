@@ -13,6 +13,14 @@
     "test": "react-app-rewired test",
     "eject": "react-app-rewired eject"
   },
+  "jest": {
+    "testMatch": [
+      "**/__tests__/**/*.test.js"
+    ],
+    "moduleNameMapper": {
+      "^~/(.*)": "<rootDir>/src/$1"
+    }
+  },
   "browserslist": {
     "production": [
       ">0.2%",
