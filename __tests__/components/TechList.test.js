@@ -1,7 +1,7 @@
 import React from "react";
 import { render, fireEvent, cleanup } from "@testing-library/react";
 
-import TechList from "~/components/Tech";
+import TechList from "~/components/TechList";
 
 describe("Tech component", () => {
   beforeEach(() => {
