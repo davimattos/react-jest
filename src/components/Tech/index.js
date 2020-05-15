@@ -12,16 +12,18 @@ export default function TechList() {
   return (
     <form data-testid="tech-form" onSubmit={handleAddTech}>
       <ul data-testid="tech-list">
-        {techs.map(tech => (
+        {techs.map((tech) => (
           <li key={tech}>{tech}</li>
         ))}
       </ul>
-      <label htmlFor="Tech">Tech</label>
+
+      <label htmlFor="tech">Tech</label>
       <input
-        id="Tech"
+        id="tech"
         value={newTech}
-        onChange={e => setNewTech(e.target.value)}
+        onChange={(e) => setNewTech(e.target.value)}
       />
+
       <button onClick={handleAddTech}>Adicionar</button>
     </form>
   );
